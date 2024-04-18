@@ -1,0 +1,144 @@
+.nav-name{
+font-family: "Lora", serif;
+font-weight: bold;
+margin-left: 5%;
+margin-right: 30%;
+}
+.custom-font{
+font-family: "Lora", serif;
+}
+.img-me{
+    width: 40%;
+    height: 75%;
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+
+.bg-img{
+    background-color: black;
+    width: 100%;
+    color:white;
+    
+}
+.btn-view{
+    background-color: red;
+    width: 20%;
+    height: 10%;
+    color:white;
+    font-family: "Lora", serif;
+
+}
+.div-about-me{
+    background-color: white;
+    width: 100%;
+}
+.div-about-me-title{
+    font-family: 'Impact', sans-serif;
+    font-style: oblique;
+    font-size:6vw;
+    margin-top:8%;
+}
+.div-about-me-sub-title{
+    font-family: "Lora", serif;
+    margin-top:10%;
+}
+.div-video{
+    width: 80%;
+    height:100%;
+    margin-left: 30%;
+    margin-top: 8%;
+}
+.div-piechart{
+    background-color: white;
+    width: 100%;
+    margin-top: 5%;
+}
+.piechart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        pink 70deg,
+        lightblue 0 235deg,
+        orange 0
+    );
+}
+.pie-chart-content{
+   margin-left: 10%;
+}
+.div-project{
+    background-color: white;
+    width: 100%;
+ 
+}
+.div-project-title{
+    font-family: 'Impact', sans-serif;
+    font-style: oblique;
+    font-size:6vw;
+    margin-top:5%;
+    text-align: center;
+}
+.div-contact-us{
+    background-color: white;
+    width: 100%;
+ 
+}
+.div-contact-us-title{
+    font-family: 'Impact', sans-serif;
+    font-style: oblique;
+    font-size:6vw;
+    margin-top:3%;
+    text-align: center;
+}
+.div-form{
+    width: 50%;
+    height: 100%;
+    background-color: wheat;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Ensure relative positioning for the icon */
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the icon */
+}
+
+.icon {
+    position: absolute;
+    top: -20px; /* Adjust as needed for positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f00; /* Icon background color */
+    width: 40px; /* Icon width */
+    height: 40px; /* Icon height */
+    border-radius: 50%; /* Make it a circle */
+    z-index: 0; /* Ensure the icon is behind the content */
+}
+.footer-icons{
+    margin-top: 5%;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-group button {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .button-group button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  .projects-image{
+    width: 287px;
+    height: 200px;
+  }

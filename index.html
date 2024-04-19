@@ -9,7 +9,7 @@
   </head>
   <body>
       <!--Start of Navbar-->
-      <nav class="navbar navbar-expand-lg bg-dark">
+      <nav class="navbar navbar-expand-lg bg-dark" id="home">
       <div class="container-fluid">
         <a class="navbar-brand text-white fs-3 nav-name" href="#">PYAE PHYO AUNG</a>
         <button class="navbar-toggler bg-white" style="margin-left: 5%;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,7 @@
             </li>
             <li class="nav-item ms-4">
               <a class="nav-link text-white custom-font fs-5" href="#">PROJECTS</a>
-            </li>
-            <li class="nav-item ms-4">
-              <a class="nav-link active text-white custom-font fs-5" aria-current="page" href="#">CONTACT</a>
-            </li>             
+            </li>        
           </ul>
         </div>
       </div>
@@ -46,7 +43,7 @@
             Hi, I'm <span style="color: red;">Pyae Phyo Aung</span>.<br>
             I'm a full-stack web developer.
           </p>
-          <button type="button" class="btn btn-danger custom-font">Download CV</button>
+          <button type="button" class="btn btn-danger custom-font" onclick="downloadPDF()">Download CV</button>
         </div>
       </div>
       
@@ -81,7 +78,7 @@
           <div class="row pie-chart-content">
             <div class="col">
               <h2 class="custom-font fw-bold">Part Coding</h2>
-              <p class="custom-font fs-3">Front-End Development <br> Back-End Development <br>Database Management</p>             
+              <p class="custom-font fs-3">Front-End Development <br> Back-End Development <br>Mobile Development</p>             
             </div>
             <div class="col">
               <div class="piechart"></div>
@@ -102,7 +99,7 @@
           <button type="button" onclick="onClickUIUX()"id="btn_uiux" class="btn-lg">UI/UX</button>
           <button type="button" onclick="onClickFrontEnd()"id="btn_forntend" class="btn-lg">FRONT-END</button>
           <button type="button" onclick="onClickBackEnd()"id="btn_backend"class="btn-lg">BACK-END</button>
-          <button type="button" onclick="onClickDatabase()"id="btn_database" class="btn-lg">DATABASE</button>
+          <button type="button" onclick="onClickMobile()"id="btn_mobile" class="btn-lg">Mobile</button>
         </div>
         <!--Start of show projects-->
         <div id="grid-projects">
@@ -110,33 +107,9 @@
        <!--End of show projects-->
       </div>
       <!--End of projects-->
-      <!--Start of contact us-->
-      <div class="div-contact-us">
-        <h1 class="div-contact-us-title">Contact</h1>
-        <p class="custom-font fs-3 text-center"> Feel free to Contact me by submitting the form below and I will get back to you as soon as possible. </p>
-        <div class="div-form">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Name</label>
-              <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Message</label>
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100%;"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="margin-left: 45%;margin-right: 45%;">Submit</button>
-          </form>
-        </div>
-      </div>
-      <!--End of contact us-->
       <!--Start of footer-->
       <footer class="bg-dark container-fluid">
-          <img src="data/uparrow.png" class="icon" alt="Flowers in Chania">
+          <a href="#home"><img src="data/uparrow.png" class="icon" alt="Flowers in Chania"></a>
           <ul class="nav justify-content-center pb-3 mb-3 m footer-icons">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-light"><img src="data/instagram.png" alt="Flowers in Chania"></a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-light"><img src="data/github.png" alt="Flowers in Chania"></a></li>

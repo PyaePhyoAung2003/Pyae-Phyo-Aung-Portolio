@@ -32,6 +32,7 @@ font-family: "Lora", serif;
 .div-about-me{
     background-color: white;
     width: 100%;
+    margin-bottom: 5%;
 }
 .div-about-me-title{
     font-family: 'Impact', sans-serif;
@@ -49,24 +50,7 @@ font-family: "Lora", serif;
     margin-left: 30%;
     margin-top: 8%;
 }
-.div-piechart{
-    background-color: white;
-    width: 100%;
-    margin-top: 5%;
-}
-.piechart {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-image: conic-gradient(
-        pink 70deg,
-        lightblue 0 235deg,
-        orange 0
-    );
-}
-.pie-chart-content{
-   margin-left: 10%;
-}
+
 .div-project{
     background-color: white;
     width: 100%;

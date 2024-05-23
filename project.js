@@ -20,10 +20,15 @@ function downloadPDF() {
     document.body.removeChild(link);
 }
 let projects = [
-  { name: "Go Wild Wild Life Park",type:"backend", image:"gowwlifepark.png",description:"The Go Wild Wild Life Park used Java for basic database operations, such as creating, updating, reading, selecting, and deleting data. The project probably included setting up a database with MySQL or a similar RDBMS.",websiteLink:"",githubLink:"https://github.com/PyaePhyoAung2003/GoWildWildLifePark" },
+  { name: "Go Wild Wild Life Park",type:"backend", image:"gowwlifepark.png",description:"The Go Wild Wild Life Park used Java for basic database operations, such as creating, updating, reading, selecting, and deleting data. The project probably included setting up a database with MySQL or a similar RDBMS.",websiteLink:"#gwwlp",githubLink:"https://github.com/PyaePhyoAung2003/GoWildWildLifePark" },
   { name: "In A Box", type:"frontend",image:"inabox.png",description:"In A Box is a website design project using wireframes, HTML, and CSS to create a visually appealing, user-friendly site. Wireframes outline the layout, HTML creates the structure, and CSS styles it.",websiteLink:"https://pyaephyoaung2003.github.io/In-a-box/",githubLink:"https://github.com/PyaePhyoAung2003/In-a-box" },
-  { name: "Training Department Course", type:"backend",image:"trainingdepartmentcourse.png",description:"A training department course website that uses Java to save data in Excel and send information to users via email would likely be a web application that integrates various technologies. ",websiteLink:"",githubLink:"https://github.com/PyaePhyoAung2003/TrainingDepartmentCourse" },
-  { name: "Math Quiz", type:"mobile", image:"mathquiz.png",description:"The Math Quiz app, developed in Java for Android Studio, offers users multiple-choice questions on addition, subtraction, multiplication, and division.",websiteLink:"",githubLink:"https://github.com/PyaePhyoAung2003/MathQuizGame" }
+  { name: "Training Department Course", type:"backend",image:"trainingdepartmentcourse.png",description:"A training department course website that uses Java to save data in Excel and send information to users via email would likely be a web application that integrates various technologies. ",websiteLink:"#tdc",githubLink:"https://github.com/PyaePhyoAung2003/TrainingDepartmentCourse" },
+  { name: "Math Quiz", type:"mobile", image:"mathquiz.png",description:"The Math Quiz app, developed in Java for Android Studio, offers users multiple-choice questions on addition, subtraction, multiplication, and division.",websiteLink:"#mq",githubLink:"https://github.com/PyaePhyoAung2003/MathQuizGame" },
+  { name: "ABC Learning Center", type:"frontend", image:"abc.png",description:"ABC Learning Center offers tutorials, projects, and challenges in HTML, CSS, and JavaScript for all levels of front-end developers, providing a supportive environment to enhance your skills and excel in web development.",websiteLink:"https://pyaephyoaung2003.github.io/ABCLearningCenter/",githubLink:"https://github.com/PyaePhyoAung2003/ABCLearningCenter" },
+  { name: "DoBu Martial Arts", type:"frontend", image:"dbm.png",description:"DoBu Martial Arts offers tutorials, projects, and challenges in HTML, CSS, and JavaScript for front-end developers. It provides a supportive environment for all skill levels, with expert instructors and a community of like-minded individuals.",websiteLink:"https://pyaephyoaung2003.github.io/DoBu-Martial-Arts/",githubLink:"https://github.com/PyaePhyoAung2003/DoBu-Martial-Arts" },
+  { name: "Boutiqua", type:"uiux", image:"boutique.png",description:"Boutiqa is an Axure prototype demonstrating modern e-commerce UI/UX design, including product listings, search, cart management, and checkout. It utilizes dynamic panels and widgets for a realistic shopping experience.",websiteLink:"https://pyaephyoaung2003.github.io/Boutiqa_Prototyping/",githubLink:"https://github.com/PyaePhyoAung2003/Boutiqa_Prototyping" },
+  { name: "XYZ Trainging Center", type:"uiux", image:"xyztraining.png",description:"XYZ Education Center's Axure course offers hands-on training in creating interactive web and mobile prototypes, teaching wireframing, interactive elements, and user simulation.",websiteLink:"https://pyaephyoaung2003.github.io/XYZ_Prototyping/",githubLink:"https://github.com/PyaePhyoAung2003/XYZ_Prototyping" },
+  { name: "Patharda Collection", type:"uiux", image:"pathardacollection.png",description:"Patharda Collection Website Prototype A Patharda Collection website prototype, created with Axure, is an interactive model showcasing the boutique's design, layout, and functionality for user testing.",websiteLink:"https://pyaephyoaung2003.github.io/Patharda_Collection_Prototype/",githubLink:"https://github.com/PyaePhyoAung2003/Patharda_Collection_Prototype" }
 
 ];
 onClickAll();
@@ -110,7 +115,7 @@ createCards(selectedProjects)
       card.innerHTML = `
       <img src="data/${_selectedProjects[j].image}" class="card-img-top projects-image" alt="...">
       <div class="card-body">
-        <h5 class="card-title"><a href="${_selectedProjects[j].websiteLink}">${_selectedProjects[j].name}</a></h5>
+        <h5 class="card-title ${_selectedProjects[j].websiteLink}"><a href="${_selectedProjects[j].websiteLink}">${_selectedProjects[j].name}</a></h5>
         <div class="projectDescription">
         <p class="card-text">${_selectedProjects[j].description}</p>
        

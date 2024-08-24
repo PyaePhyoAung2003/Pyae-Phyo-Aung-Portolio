@@ -1,9 +1,55 @@
-.nav-name{
-font-family: "Lora", serif;
-font-weight: bold;
-margin-left: 5%;
-margin-right: 30%;
-}
+.nav-name {
+    font-family: "Lora", serif;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: auto;
+  }
+  
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .mail-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    position: relative;
+  }
+  
+  .copy-alert {
+    display: none;
+    color: #ffffff; /* White text color */
+    font-size: 0.75rem;
+    position: absolute;
+    left: 0; /* Align with the email logo */
+    top: 0; /* Align with the email logo */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  .copied-alert {
+    display: none;
+    color: #28a745;
+    font-size: 0.75rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  #email-link:hover .copy-alert {
+    display: inline;
+  }
+  
 .custom-font{
 font-family: "Lora", serif;
 }
@@ -126,3 +172,38 @@ footer {
     width: 287px;
     height: 200px;
   }
+  .div-piechart {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .pie-chart-content {
+    text-align: left;
+  }
+  
+  .custom-font {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .fw-bold {
+    font-weight: bold;
+  }
+  
+  .fs-4 {
+    font-size: 1.25rem;
+  }
+  
+  .section-heading {
+    font-size: 1.1rem;
+    color: #343a40;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  

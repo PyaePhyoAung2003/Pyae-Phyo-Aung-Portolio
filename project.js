@@ -89,7 +89,7 @@ createCards(selectedProjects)
   }
   let projectDescriptions = document.getElementsByClassName('projectDescription'); 
   for (let i = 0; i < projectDescriptions.length; i++) {
-    projectDescriptions[i].style = "width: 100%;height: 100px;" // Change text color to blue
+    projectDescriptions[i].style = "width: 100%;height: 115px;" // Change text color to blue
   }
   
   let btnGithub = document.getElementsByClassName('btnGithub'); 

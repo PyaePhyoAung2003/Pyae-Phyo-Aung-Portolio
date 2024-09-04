@@ -206,4 +206,10 @@ footer {
   ul li {
     margin-bottom: 5px;
   }
+
+  .no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
   

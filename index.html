@@ -79,11 +79,14 @@
             </div>
             <div class="col">
               <div class="div-video">
-                <video src="data/introduction.mp4" autoplay muted style="width: 100%;
-                height:100%;"></video>
+                <video id="video" src="data/introduction.mp4" style="width: 100%; height: 100%;"></video>
+                <div class="controls">
+                  <img id="playPauseIcon" src="data/play.png" alt="Play/Pause" class="control-icon">
+                </div>
               </div>
-              
             </div>
+            
+            
           </div>
         </div>
       </div>
@@ -219,6 +222,20 @@
     console.error("Failed to copy: ", err);
   });
 }
+document.addEventListener('DOMContentLoaded', function () {
+  const video = document.getElementById('video');
+  const playPauseIcon = document.getElementById('playPauseIcon');
+
+  playPauseIcon.addEventListener('click', function () {
+    if (video.paused) {
+      video.play();
+      playPauseIcon.src = 'data/pause.png'; // Update with your pause icon path
+    } else {
+      video.pause();
+      playPauseIcon.src = 'data/play.png'; // Update with your play icon path
+    }
+  });
+});
 
 
     </script>

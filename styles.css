@@ -1,215 +1,248 @@
+/* Existing CSS */
 .nav-name {
-    font-family: "Lora", serif;
-    font-weight: bold;
-    margin-left: 5%;
-    margin-right: auto;
-  }
-  
-  .navbar-nav .nav-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .mail-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    position: relative;
-  }
-  
-  .copy-alert {
-    display: none;
-    color: #ffffff; /* White text color */
-    font-size: 0.75rem;
-    position: absolute;
-    left: 0; /* Align with the email logo */
-    top: 0; /* Align with the email logo */
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
-    padding: 2px 5px;
-    border-radius: 3px;
-  }
-  
-  .copied-alert {
-    display: none;
-    color: #28a745;
-    font-size: 0.75rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
-    padding: 2px 5px;
-    border-radius: 3px;
-  }
-  
-  #email-link:hover .copy-alert {
-    display: inline;
-  }
-  
-.custom-font{
-font-family: "Lora", serif;
-}
-.img-me{
-    width: 40%;
-    height: 75%;
-    margin-top: 10%;
-    margin-left: 10%;
-
+  font-family: "Lora", serif;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: auto;
 }
 
-.bg-img{
-    background-color: black;
-    width: 100%;
-    color:white;
-    
-}
-.btn-view{
-    background-color: red;
-    width: 20%;
-    height: 10%;
-    color:white;
-    font-family: "Lora", serif;
-
-}
-.div-about-me{
-    background-color: white;
-    width: 100%;
-    margin-bottom: 5%;
-}
-.div-about-me-title{
-    font-family: 'Impact', sans-serif;
-    font-style: oblique;
-    font-size:6vw;
-    margin-top:8%;
-}
-.div-about-me-sub-title{
-    font-family: "Lora", serif;
-    margin-top:10%;
-}
-.div-video{
-    width: 80%;
-    height:100%;
-    margin-left: 30%;
-    margin-top: 8%;
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.div-project{
-    background-color: white;
-    width: 100%;
- 
+.mail-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  position: relative;
 }
-.div-project-title{
-    font-family: 'Impact', sans-serif;
-    font-style: oblique;
-    font-size:6vw;
-    margin-top:5%;
-    text-align: center;
+
+.copy-alert {
+  display: none;
+  color: #ffffff; /* White text color */
+  font-size: 0.75rem;
+  position: absolute;
+  left: 0; /* Align with the email logo */
+  top: 0; /* Align with the email logo */
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+  padding: 2px 5px;
+  border-radius: 3px;
 }
-.div-contact-us{
-    background-color: white;
-    width: 100%;
- 
+
+.copied-alert {
+  display: none;
+  color: #28a745;
+  font-size: 0.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+  padding: 2px 5px;
+  border-radius: 3px;
 }
-.div-contact-us-title{
-    font-family: 'Impact', sans-serif;
-    font-style: oblique;
-    font-size:6vw;
-    margin-top:3%;
-    text-align: center;
+
+#email-link:hover .copy-alert {
+  display: inline;
 }
-.div-form{
-    width: 50%;
-    height: 100%;
-    background-color: wheat;
-    margin-left: 20%;
-    margin-right: 20%;
+
+.custom-font {
+  font-family: "Lora", serif;
 }
+
+.img-me {
+  width: 40%;
+  height: 75%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.bg-img {
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+.btn-view {
+  background-color: red;
+  width: 20%;
+  height: 10%;
+  color: white;
+  font-family: "Lora", serif;
+}
+
+.div-about-me {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.div-about-me-title {
+  font-family: 'Impact', sans-serif;
+  font-style: oblique;
+  font-size: 6vw;
+  margin-top: 8%;
+}
+
+.div-about-me-sub-title {
+  font-family: "Lora", serif;
+  margin-top: 10%;
+}
+
+.div-video {
+  width: 80%;
+  height: 100%;
+  margin-left: 30%;
+  margin-top: 8%;
+}
+
+.div-project {
+  background-color: white;
+  width: 100%;
+}
+
+.div-project-title {
+  font-family: 'Impact', sans-serif;
+  font-style: oblique;
+  font-size: 6vw;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.div-contact-us {
+  background-color: white;
+  width: 100%;
+}
+
+.div-contact-us-title {
+  font-family: 'Impact', sans-serif;
+  font-style: oblique;
+  font-size: 6vw;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.div-form {
+  width: 50%;
+  height: 100%;
+  background-color: wheat;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 footer {
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative; /* Ensure relative positioning for the icon */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; /* Ensure relative positioning for the icon */
 }
 
 .footer-content {
-    position: relative;
-    z-index: 1; /* Ensure the content is above the icon */
+  position: relative;
+  z-index: 1; /* Ensure the content is above the icon */
 }
 
 .icon {
-    position: absolute;
-    top: -20px; /* Adjust as needed for positioning */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f00; /* Icon background color */
-    width: 40px; /* Icon width */
-    height: 40px; /* Icon height */
-    border-radius: 50%; /* Make it a circle */
-    z-index: 0; /* Ensure the icon is behind the content */
+  position: absolute;
+  top: -20px; /* Adjust as needed for positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f00; /* Icon background color */
+  width: 40px; /* Icon width */
+  height: 40px; /* Icon height */
+  border-radius: 50%; /* Make it a circle */
+  z-index: 0; /* Ensure the icon is behind the content */
 }
-.footer-icons{
-    margin-top: 5%;
-}
-.button-group {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button-group button {
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
-  
-  .button-group button.active {
-    background-color: #007bff;
-    color: white;
-  }
-  .projects-image{
-    width: 287px;
-    height: 200px;
-  }
-  .div-piechart {
-    background-color: #f8f9fa;
-    padding: 20px;
-  }
-  
-  .pie-chart-content {
-    text-align: left;
-  }
-  
-  .custom-font {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .fw-bold {
-    font-weight: bold;
-  }
-  
-  .fs-4 {
-    font-size: 1.25rem;
-  }
-  
-  .section-heading {
-    font-size: 1.1rem;
-    color: #343a40;
-  }
-  
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 5px;
-  }
 
-  .no-bullets {
-    list-style-type: none;
-    padding-left: 0;
+.footer-icons {
+  margin-top: 5%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button-group button {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.button-group button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.projects-image {
+  width: 287px;
+  height: 200px;
+}
+
+/* New CSS for pie chart animation */
+.div-piechart {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.pie-chart-content {
+  text-align: left;
+}
+
+/* Animation keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add the animation to the sections */
+.div-piechart .col-md-4 {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Delay animations for each column */
+.div-piechart .col-md-4:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.div-piechart .col-md-4:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.div-piechart .col-md-4:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.div-piechart .col-md-4:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.div-piechart .col-md-4:nth-child(5) {
+  animation-delay: 1s;
+}
+
+/* Overwrite custom-font class to maintain consistency */
+.custom-font {
+  font-family: 'Lora', serif;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}

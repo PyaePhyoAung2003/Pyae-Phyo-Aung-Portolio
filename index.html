@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pyae Phyo Aung</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
+   <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-      <!-- Navbar -->
+      <!--Start of Navbar-->
       <nav class="navbar navbar-expand-lg bg-dark" id="home">
         <div class="container-fluid">
           <a class="navbar-brand text-white fs-3 nav-name" href="#">PYAE PHYO AUNG</a>
@@ -38,149 +38,189 @@
           </div>
         </div>
       </nav>
-      <!-- End of Navbar -->
+      
+      <!--End of Navbar-->
 
-      <!-- Intro Section -->
+      <!--Start of intro-->
       <div class="bg-img container-fluid">
-        <div class="row">
-          <div class="col">
-            <img class="img-me" src="data/me.jpg" alt="Pyae Phyo Aung">
-          </div>
-          <div class="col">
-            <p class="custom-font fs-1" style="margin-top: 10%;">
-              Hi, I'm <span style="color: rgba(13, 152, 186, 1);">Pyae Phyo Aung</span>.<br>
-              I'm a front-end developer.
-            </p>
-            <p class="custom-font fs-4">
-              Phone number: <span style="color: rgba(13, 152, 186, 1);">+66 0979873385</span><br>
-              Age: <span style="color: rgba(13, 152, 186, 1);">21</span><br>
-              Address: <span style="color: rgba(13, 152, 186, 1);">Plum Condo Mix Chaengwattana, Lak Si, Bangkok</span>
-            </p>
-            <button type="button" class="btn custom-font" onclick="downloadPDF()" style="background-color: rgba(13, 152, 186, 1); color: white;">
-              <b>Download CV</b>
-            </button>
-          </div>
+      <div class="row">
+        <div class="col">
+            <img class="img-me" src="data/me.jpg">
+        </div>
+        <div class="col">
+          <p class="custom-font fs-1" style="margin-top: 10%;">
+            Hi, I'm <span style="color: rgba(13, 152, 186, 1);">Pyae Phyo Aung</span>.<br>
+            I'm a front-end developer.
+          </p>
+          <p class="custom-font fs-4">
+            Phone number : <span style="color: rgba(13, 152, 186, 1);">+66 0979873385</span><br>
+            Age : <span style="color: rgba(13, 152, 186, 1);">21</span><br>
+            Address : <span style="color: rgba(13, 152, 186, 1);">Plum Condo Mix Chaengwattana, Lak Si, Bangkok</span>
+           </p>
+          <button type="button" class="btn custom-font" onclick="downloadPDF()" 
+          style="background-color: rgba(13, 152, 186, 1); color: white;"><b>D o w n l o a d &#160; C V</b></button>
+          
         </div>
       </div>
-      <!-- End of Intro Section -->
-
-      <!-- About Me Section -->
+      
+      </div>
+      <!--End of intro-->
+      <!--Start of video-->
       <div class="div-about-me">
         <div class="container text-center">
           <div class="row">
             <div class="col">
               <h1 class="div-about-me-title" id="about">ABOUT ME</h1>
-              <h2 class="div-about-me-sub-title">Who am I?</h2>
+              <h1 class="div-about-me-sub-title">
+                Who am I?
+              </h1>
               <p class="custom-font fs-3" style="margin-top: 5%;"> Hello! I'm Pyae Phyo Aung, a front-end developer skilled in HTML, CSS, JavaScript, as well as Axure and Figma. I specialize in designing and developing responsive, visually appealing websites that deliver exceptional user experiences. Let's collaborate to make your web presence truly stand out!
               </p>
             </div>
             <div class="col">
               <div class="div-video">
-                <video src="data/introduction.mp4" autoplay muted style="width: 100%; height:100%;"></video>
+                <video src="data/introduction.mp4" autoplay muted style="width: 100%;
+                height:100%;"></video>
               </div>
+              
             </div>
           </div>
         </div>
       </div>
-      <!-- End of About Me Section -->
-
-      <!-- Education Section -->
       <div class="container my-5">
         <div class="row">
-          <div class="col-12">
-            <h1 class="text-center">Education</h1>
-            <h3>Lithan Academy, Singapore</h3>
-            <p>Foundation Diploma in Information Technology 2021-2022 (Completed)</p>
-            <p>Level 5 Higher National Diploma in Computing (Applications Development) 2023 - Present</p>
+            <div class="col-12">
+              <h1 class="text-center">Education</h1>
+                <h3>Lithan Academy, Singapore</h3>
+                <p>Foundation Diploma in Information Technology 2021-2022(Completed)</p>
+                <p>Level 5 Higher National Diploma in Computing (Applications Development) 2023 - Present</p>
+            </div>
+        </div>
+    </div>
+    <div class="div-piechart">
+      <div class="container justify-content-center">
+        <div class="row pie-chart-content">
+          <h2 class="custom-font fw-bold text-center">Skills</h2>
+    
+          <div class="col-md-4">
+            <p class="custom-font fs-4">
+              <b class="section-heading">Front-End Development</b>
+              <ul class="no-bullets">
+                <li><img src="data/html_css.png" alt="HTML Icon" class="zoom-icon" /> HTML/CSS</li>
+                <li><img src="data/bootstrap.png" alt="Bootstrap Icon" class="zoom-icon" /> Bootstrap</li>
+              </ul>
+            </p>
+          </div>
+    
+          <div class="col-md-4">
+            <p class="custom-font fs-4">
+              <b class="section-heading">Back-End Development</b>
+              <ul class="no-bullets">
+                <li><img src="data/springboot.png" alt="Spring Boot Icon" class="zoom-icon" /> Spring Boot</li>
+                <li><img src="data/mysql.png" alt="MySQL Icon" class="zoom-icon" /> MySQL</li>
+              </ul>
+            </p>
+          </div>
+    
+          <div class="col-md-4">
+            <p class="custom-font fs-4">
+              <b class="section-heading">Mobile Development</b>
+              <ul class="no-bullets">
+                <li><img src="data/androidstudio.png" alt="Android Studio Icon" class="zoom-icon" /> Android Studio</li>
+              </ul>
+            </p>
+          </div>
+    
+          <div class="col-md-4">
+            <p class="custom-font fs-4">
+              <b class="section-heading">Languages</b>
+              <ul class="no-bullets">
+                <li><img src="data/Java.png" alt="Java Icon" class="zoom-icon" /> Java</li>
+                <li><img src="data/javascript.png" alt="JavaScript Icon" class="zoom-icon" /> JavaScript</li>
+              </ul>
+            </p>
+          </div>
+    
+          <div class="col-md-4">
+            <p class="custom-font fs-4">
+              <b class="section-heading">UI/UX Design</b>
+              <ul class="no-bullets">
+                <li><img src="data/axure.png" alt="Axure Icon" class="zoom-icon" /> Axure</li>
+                <li><img src="data/figma.png" alt="Figma Icon" class="zoom-icon" /> Figma</li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
-
-      <!-- Skills Section -->
-      <div class="div-piechart">
-        <div class="container justify-content-center">
-          <div class="row pie-chart-content">
-            <h2 class="custom-font fw-bold text-center">Skills</h2>
-            <div class="col-md-4">
-              <p class="custom-font fs-4">
-                <b class="section-heading">Front-End Development</b>
-                <ul class="no-bullets">
-                  <li><img src="data/html_css.png" alt="HTML Icon" style="width: 32px; height: 32px;" /> HTML/CSS</li>
-                  <li><img src="data/bootstrap.png" alt="Bootstrap Icon" style="width: 32px; height: 32px;" /> Bootstrap</li>
-                </ul>
-              </p>
-            </div>
-            <div class="col-md-4">
-              <p class="custom-font fs-4">
-                <b class="section-heading">Back-End Development</b>
-                <ul class="no-bullets">
-                  <li><img src="data/springboot.png" alt="Spring Boot Icon" style="width: 20px; height: 20px;" /> Spring Boot</li>
-                  <li><img src="data/mysql.png" alt="MySQL Icon" style="width: 20px; height: 20px;" /> MySQL</li>
-                </ul>
-              </p>
-            </div>
-            <div class="col-md-4">
-              <p class="custom-font fs-4">
-                <b class="section-heading">Mobile Development</b>
-                <ul class="no-bullets">
-                  <li><img src="data/androidstudio.png" alt="Android Studio Icon" style="width: 20px; height: 20px;" /> Android Studio</li>
-                </ul>
-              </p>
-            </div>
-            <div class="col-md-4">
-              <p class="custom-font fs-4">
-                <b class="section-heading">Languages</b>
-                <ul class="no-bullets">
-                  <li><img src="data/Java.png" alt="Java Icon" style="width: 20px; height: 20px;" /> Java</li>
-                  <li><img src="data/javascript.png" alt="JavaScript Icon" style="width: 20px; height: 20px;" /> JavaScript</li>
-                </ul>
-              </p>
-            </div>
-            <div class="col-md-4">
-              <p class="custom-font fs-4">
-                <b class="section-heading">UI/UX Design</b>
-                <ul class="no-bullets">
-                  <li><img src="data/axure.png" alt="Axure Icon" style="width: 20px; height: 20px;" /> Axure</li>
-                  <li><img src="data/figma.png" alt="Figma Icon" style="width: 20px; height: 20px;" /> Figma</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of Skills Section -->
-
-      <!-- Projects Section -->
+    </div>
+    
+    
+    <!-- End of piechart -->
+    
+    
+    
+     
+      <!--Start of projects-->
       <div class="div-project">
         <h1 class="div-project-title text-center" id="project">Projects</h1>
         <div class="button-group">
-          <button type="button" onclick="onClickAll()" id="btn_all" class="btn btn-all"><b>All</b></button>
-          <button type="button" onclick="onClickReact()" id="btn_react" class="btn btn-react"><b>React</b></button>
-          <button type="button" onclick="onClickJava()" id="btn_java" class="btn btn-java"><b>Java</b></button>
+          <button type="button" onclick="onClickAll()" id="btn_all" class="btn-lg">ALL</button>
+          <button type="button" onclick="onClickUIUX()"id="btn_uiux" class="btn-lg">UI/UX</button>
+          <button type="button" onclick="onClickFrontEnd()"id="btn_forntend" class="btn-lg">FRONT- 
+          END</button>
+          <button type="button" onclick="onClickBackEnd()"id="btn_backend"class="btn-lg">BACK- 
+          END</button>
+          <button type="button" onclick="onClickMobile()"id="btn_mobile" class="btn-lg">Mobile</button>
         </div>
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Portfolio Website</h3>
-              <p>Designed and developed a personal portfolio website to showcase my skills, experience, and projects using ReactJS.</p>
-            </div>
-            <div class="col-md-6">
-              <h3>Patharda Collection</h3>
-              <p>Developed an interactive Axure prototype for an e-commerce boutique.</p>
-            </div>
-            <!-- Add more projects similarly -->
-          </div>
+        <!--Start of show projects-->
+        <div id="grid-projects">
+
         </div>
+       <!--End of show projects-->
       </div>
-      <!-- End of Projects Section -->
+      <!--End of projects-->
+      <!--Start of footer-->
+      <footer class="bg-dark container-fluid" style="margin-top: 4%;">
+          <a href="#home"><img src="data/uparrow.png" class="icon" alt="Flowers in Chania"></a>
+         
+          <ul class="nav justify-content-center pb-3 mb-3 m footer-icons">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light"><img 
+            src="data/instagram.png" alt="Flowers in Chania"></a></li>
 
-      <!-- Footer -->
-      <footer class="bg-dark text-white text-center p-4 mt-5">
-        <p>© 2024 Pyae Phyo Aung. All Rights Reserved.</p>
+            <li class="nav-item"><a href="https://github.com/" class="nav-link px-2 text-light"><img 
+            src="data/github.png" alt="Flowers in Chania"></a></li>
+
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">
+              <img src="data/reddit.png" alt="Flowers in Chania"></a></li>
+
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light"><img 
+            src="data/twitter.png" alt="Flowers in Chania"></a></li>
+          </ul>
+          
+          <p class="justify-content-center custom-font text-center text-light">PYAE PHYO AUNG © 
+           2023</p>
       </footer>
-      <!-- End of Footer -->
+      <!--End of footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+     crossorigin="anonymous"></script>
+    <script src="project.js"></script>
+    <script>
+  function copyEmail(event) {
+  event.preventDefault(); // Prevent default anchor behavior
+  const email = "pyaephyoaung17524@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    document.getElementById("copy-alert").style.display = "none"; // Hide "Click to copy"
+    document.getElementById("copied-alert").style.display = "inline"; // Show "Copied!"
+    setTimeout(() => {
+      document.getElementById("copied-alert").style.display = "none"; // Hide "Copied!" after 2 seconds
+    }, 2000);
+  }).catch(err => {
+    console.error("Failed to copy: ", err);
+  });
+}
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-vSgoAqIH9BlWYd5LwVTFxjaMDAmC0U3O9nPt/WzoUfyORjl3SLzWGAdo9m99uWSi" crossorigin="anonymous"></script>
-      <script src="main.js"></script>
+
+    </script>
   </body>
 </html>

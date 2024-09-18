@@ -1,101 +1,131 @@
+/* Global Styles */
+body {
+  font-family: "Lora", serif;
+}
+
+/* Navigation Bar */
 .nav-name {
-    font-family: "Lora", serif;
-    font-weight: bold;
-    margin-left: 5%;
-    margin-right: auto;
-  }
-  
-  .navbar-nav .nav-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .mail-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    position: relative;
-  }
-  
-  .copy-alert {
-    display: none;
-    color: #ffffff; /* White text color */
-    font-size: 0.75rem;
-    position: absolute;
-    left: 0; /* Align with the email logo */
-    top: 0; /* Align with the email logo */
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
-    padding: 2px 5px;
-    border-radius: 3px;
-  }
-  
-  .copied-alert {
-    display: none;
-    color: #28a745;
-    font-size: 0.75rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
-    padding: 2px 5px;
-    border-radius: 3px;
-  }
-  
-  #email-link:hover .copy-alert {
-    display: inline;
-  }
-  
-.custom-font{
-font-family: "Lora", serif;
-}
-.img-me{
-    width: 40%;
-    height: 75%;
-    margin-top: 10%;
-    margin-left: 10%;
-
+  font-family: "Lora", serif;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: auto;
+  font-size: 2vw; /* Font size scales with the viewport width */
 }
 
-.bg-img{
-    background-color: black;
-    width: 100%;
-    color:white;
-    
+@media (max-width: 1200px) {
+  .nav-name {
+      font-size: 1.8vw; /* Slightly smaller font size for medium screens */
+  }
 }
-.btn-view{
-    background-color: red;
-    width: 20%;
-    height: 10%;
-    color:white;
-    font-family: "Lora", serif;
 
+@media (max-width: 992px) {
+  .nav-name {
+      font-size: 1.5vw; /* Smaller font size for smaller screens */
+  }
 }
-.div-about-me{
-    background-color: white;
-    width: 100%;
-    margin-bottom: 5%;
+
+@media (max-width: 768px) {
+  .nav-name {
+      font-size: 1.2vw; /* Further adjust font size for mobile screens */
+  }
 }
-.div-about-me-title{
-    font-family: 'Impact', sans-serif;
-    font-style: oblique;
-    font-size:6vw;
-    margin-top:8%;
+
+@media (max-width: 576px) {
+  .nav-name {
+      font-size: 1rem; /* Fixed font size for very small screens */
+  }
 }
-.div-about-me-sub-title{
-    font-family: "Lora", serif;
-    margin-top:10%;
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
+
+.mail-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.copy-alert, .copied-alert {
+  display: none;
+  color: #ffffff;
+  font-size: 0.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.copied-alert {
+  color: #28a745;
+}
+
+#email-link:hover .copy-alert {
+  display: inline;
+}
+
+/* General Fonts */
+.custom-font {
+  font-family: "Lora", serif;
+}
+
+/* Image Styling */
+.img-me {
+  width: 40%;
+  height: 75%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.bg-img {
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+/* Buttons */
+.btn-view {
+  background-color: red;
+  width: 20%;
+  height: 10%;
+  color: white;
+  font-family: "Lora", serif;
+}
+
+/* About Me Section */
+.div-about-me {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.div-about-me-title {
+  font-family: 'Impact', sans-serif;
+  font-style: oblique;
+  font-size: 6vw;
+  margin-top: 8%;
+}
+
+.div-about-me-sub-title {
+  font-family: "Lora", serif;
+  margin-top: 10%;
+}
+
+/* Video Styling */
 .div-video {
   position: relative;
-  width: 80%;
+  width: 90%;
   height: 50%;
-  margin-left: 30%;
-  margin-top: 40%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 35%;
 }
 
 video {
@@ -104,22 +134,23 @@ video {
   height: 100%;
 }
 
+/* Video Controls */
 .controls {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .div-video:hover .controls {
-  opacity: 1; /* Show controls when hovering over .div-video */
+  opacity: 1;
 }
 
 .control-icon {
-  width: 50px; /* Adjust size as needed */
+  width: 50px;
   height: auto;
   cursor: pointer;
   opacity: 0.8;
@@ -130,134 +161,150 @@ video {
   opacity: 1;
 }
 
-.div-project{
-    background-color: white;
-    width: 100%;
- 
+/* Project Section */
+.div-project {
+  background-color: white;
+  width: 100%;
 }
-.div-project-title{
-    font-family: 'Impact', sans-serif;
-    font-style: oblique;
-    font-size:6vw;
-    margin-top:5%;
-    text-align: center;
+
+.div-project-title {
+  font-family: 'Impact', sans-serif;
+  font-style: oblique;
+  font-size: 6vw;
+  margin-top: 5%;
+  text-align: center;
 }
-.div-contact-us{
-    background-color: white;
-    width: 100%;
- 
+
+/* Contact Us Section */
+.div-contact-us {
+  background-color: white;
+  width: 100%;
 }
-.div-contact-us-title{
-    font-family: 'Impact', sans-serif;
-    font-style: oblique;
-    font-size:6vw;
-    margin-top:3%;
-    text-align: center;
+
+.div-contact-us-title {
+  font-family: 'Impact', sans-serif;
+  font-style: oblique;
+  font-size: 6vw;
+  margin-top: 3%;
+  text-align: center;
 }
-.div-form{
-    width: 50%;
-    height: 100%;
-    background-color: wheat;
-    margin-left: 20%;
-    margin-right: 20%;
+
+.div-form {
+  width: 50%;
+  height: 100%;
+  background-color: wheat;
+  margin-left: 20%;
+  margin-right: 20%;
 }
+
+/* Footer Styling */
 footer {
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative; /* Ensure relative positioning for the icon */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
 }
 
 .footer-content {
-    position: relative;
-    z-index: 1; /* Ensure the content is above the icon */
+  position: relative;
+  z-index: 1;
 }
 
 .icon {
-    position: absolute;
-    top: -20px; /* Adjust as needed for positioning */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f00; /* Icon background color */
-    width: 40px; /* Icon width */
-    height: 40px; /* Icon height */
-    border-radius: 50%; /* Make it a circle */
-    z-index: 0; /* Ensure the icon is behind the content */
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 0;
 }
-.footer-icons{
-    margin-top: 5%;
-}
-.button-group {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button-group button {
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
-  
-  .button-group button.active {
-    background-color: #007bff;
-    color: white;
-  }
-  .projects-image{
-    width: 287px;
-    height: 200px;
-  }
-  .div-piechart {
-    background-color: #f8f9fa;
-    padding: 20px;
-  }
-  
-  .pie-chart-content {
-    text-align: left;
-  }
-  
-  .custom-font {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .fw-bold {
-    font-weight: bold;
-  }
-  
-  .fs-4 {
-    font-size: 1.25rem;
-  }
-  
-  .section-heading {
-    font-size: 1.1rem;
-    color: #343a40;
-  }
-  
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 5px;
-  }
 
-  .no-bullets {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .zoom-icon {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+.footer-icons {
+  margin-top: 5%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button-group button {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.button-group button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Project Images */
+.projects-image {
+  width: 287px;
+  height: 200px;
+}
+
+/* Pie Chart Section */
+.div-piechart {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.pie-chart-content {
+  text-align: left;
+}
+
+/* Font Styling */
+.custom-font {
+  font-family: 'Arial', sans-serif;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fs-4 {
+  font-size: 1.25rem;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 1.1rem;
+  color: #343a40;
+}
+
+/* List Styles */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Zoom Icons */
+.zoom-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .zoom-icon:hover {
-    transform: scale(1.3); /* Zoom in effect on hover */
+  transform: scale(1.3);
 }
 
 @media (max-width: 768px) {
-    .zoom-icon {
-        width: 24px;
-        height: 24px;
-    }
+  .zoom-icon {
+      width: 24px;
+      height: 24px;
+  }
 }
